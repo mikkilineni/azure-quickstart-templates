@@ -308,7 +308,7 @@
         },
         "_artifactsLocation": {
             "type": "string",
-            "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/elasticsearch",
+            "defaultValue": "https://raw.githubusercontent.com/mikkilineni/azure-quickstart-templates/master/elasticsearch",
             "metadata": {
                 "description": "Change this value to your repo name if deploying from a fork"
             }
@@ -330,8 +330,8 @@
         "storageAccountPrefix": "[concat(substring(uniqueString(resourceGroup().id, parameters('esClusterName')), 0, 6), substring(parameters('esClusterName'), 0, 3))]",
         "storageAccountNameAFS": "[concat(variables('storageAccountPrefix'), 'afs')]",
         "storageAccountNameShared": "[concat(variables('storageAccountPrefix'), 'sh')]",
-        "masterNodesIpPrefix": "10.45.48.5",
-        "marvelNodesIpPrefix": "10.45.48.20",
+        "masterNodesIpPrefix": "10.45.48.2",
+        "marvelNodesIpPrefix": "10.45.48.2",
         "kibanaIPPrefix": {
             "yes": "[variables('marvelNodesIpPrefix')]",
             "no": "[variables('masterNodesIpPrefix')]"
