@@ -342,17 +342,17 @@
             "addressPrefix": "10.45.0.0/16",
             "subnet": {
                 "master": {
-                    "name": "es_nodes",
+                    "name": "ES_NET01",
                     "prefix": "10.45.48.0/27",
                     "vnet": "[parameters('virtualNetworkName')]"
                 },
                 "data": {
-                    "name": "es_nodes",
+                    "name": "ES_NET01",
                     "prefix": "10.45.48.0/27",
                     "vnet": "[parameters('virtualNetworkName')]"
                 },
                 "other": {
-                    "name": "es_nodes",
+                    "name": "ES_NET01",
                     "prefix": "10.45.48.0/27",
                     "vnet": "[parameters('virtualNetworkName')]"
                 }
